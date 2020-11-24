@@ -15,9 +15,10 @@ public class SelectionSort {
             min = i;
             for(int j = i+1;j<a.length;j++){
                 if(a[j]<a[min]){
-                    swap(a,j,min);
+                    min = j;
                 }
             }
+            swap(a,i,min);
         }
     }
     public static void swap(int[] a,int c,int k){
